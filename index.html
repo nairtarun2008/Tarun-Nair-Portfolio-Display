@@ -337,6 +337,23 @@
             font-weight: 500;
         }
 
+        .cert-card.clickable {
+            cursor: pointer;
+        }
+
+        .credential-badge {
+            margin-top: 15px;
+            color: #667eea;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .cert-card:hover .credential-badge {
+            opacity: 1;
+        }
+
         /* Case Studies */
         .case-studies-grid {
             display: grid;
@@ -463,7 +480,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-img">
-                    <i class="fas fa-user"></i>
+                    <img src="Images/Tarun_Photo.JPG" alt="Tarun Nair" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                 </div>
                 <h1>Tarun Nair</h1>
                 <p class="subtitle">Associate Consultant & Product Manager</p>
@@ -565,52 +582,58 @@
         <div class="container">
             <h2 class="section-title">Certifications & Learning</h2>
             <div class="certifications-grid">
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.simplilearn.com/verify-certificate?certificate=12236638')">
                     <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
                     <h4>Power BI</h4>
                     <div class="issuer">Simplilearn</div>
                     <div class="date">Nov 2024</div>
                     <div class="skills">Power BI for Data Visualization</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
                 
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.credly.com/badges/your-azure-badge-id')">
                     <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
                     <h4>Microsoft Certified: Azure Fundamentals</h4>
                     <div class="issuer">Microsoft</div>
                     <div class="date">Sep 2024</div>
                     <div class="skills">Microsoft Azure</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
                 
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.kpmg.com/verify-credential/your-credential-id')">
                     <div class="cert-icon"><i class="fas fa-robot"></i></div>
                     <h4>Digital and Data Foundations - AI & Automation</h4>
                     <div class="issuer">KPMG</div>
                     <div class="date">Aug 2024</div>
                     <div class="skills">SQL for Data Analysis • Machine Learning</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
                 
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.kaggle.com/learn/certification/tarun-nair/intro-to-sql')">
                     <div class="cert-icon"><i class="fas fa-database"></i></div>
                     <h4>Intro to SQL</h4>
                     <div class="issuer">Kaggle</div>
                     <div class="date">Feb 2024</div>
                     <div class="skills">SQL for Data Analysis</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
                 
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.credly.com/badges/1620-4028')">
                     <div class="cert-icon"><i class="fas fa-cogs"></i></div>
                     <h4>Power Platform Fundamentals</h4>
                     <div class="issuer">Microsoft</div>
                     <div class="date">Feb 2023</div>
                     <div class="skills">Power BI for Data Visualization</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
                 
-                <div class="cert-card">
+                <div class="cert-card clickable" onclick="openCredential('https://www.credly.com/badges/H945-0134')">
                     <div class="cert-icon"><i class="fas fa-users"></i></div>
                     <h4>Dynamics 365 Fundamentals (CRM)</h4>
                     <div class="issuer">Microsoft</div>
                     <div class="date">Aug 2021</div>
                     <div class="skills">Power BI for Data Visualization</div>
+                    <div class="credential-badge"><i class="fas fa-external-link-alt"></i> View Credential</div>
                 </div>
             </div>
         </div>
